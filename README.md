@@ -5,11 +5,11 @@ Shared CSS and JavaScript for inline HTML widgets: section layout, item formats,
 ## Usage
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/StellaLunaSousa/low-cognitive-load-widget@1.0.0/lcl.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/StellaLunaSousa/low-cognitive-load-widget@1.0.1/lcl.css">
 <div class="lcl-root">
   <p class="lcl-p">Text with a <span class="lcl-g" data-t="term">technical term</span>.</p>
 </div>
-<script src="https://cdn.jsdelivr.net/gh/StellaLunaSousa/low-cognitive-load-widget@1.0.0/lcl.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/StellaLunaSousa/low-cognitive-load-widget@1.0.1/lcl.js"></script>
 <script>LCL({term:'Definition of the term.'})</script>
 ```
 
