@@ -4,13 +4,17 @@ Claude Code plugin with a response style and visual widgets that take little eff
 
 ## Install
 
-Claude Code 2.1.275 or later installs the plugin with one command, typed inside Claude Code:
+Run these commands in a terminal. On a machine without a GitHub SSH key, set the environment variable `CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1` first.
 
-```
-/plugin install low-cognitive-load --marketplace StellaLunaSousa/low-cognitive-load-widget
+```bash
+claude plugin marketplace add StellaLunaSousa/low-cognitive-load-widget
 ```
 
-Then choose **Low Cognitive Load** as the output style. On a machine without a GitHub SSH key, set the environment variable `CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1` first.
+```bash
+claude plugin install low-cognitive-load@low-cognitive-load-marketplace
+```
+
+Then select the output style. Its full name is `low-cognitive-load:Low Cognitive Load`, which is the value to use for `outputStyle` in `~/.claude/settings.json`.
 
 ## Updates
 
