@@ -1,0 +1,12 @@
+{
+  "name": "low-cognitive-load-marketplace",
+  "description": "Low Cognitive Load plugin for Claude Code",
+  "owner": { "name": "Stella Luna Sousa" },
+  "plugins": [
+    {
+      "name": "low-cognitive-load",
+      "source": "./",
+      "description": "Response style with the answer first, short chunks and literal language, plus visual widgets with a hover glossary."
+    }
+  ]
+}

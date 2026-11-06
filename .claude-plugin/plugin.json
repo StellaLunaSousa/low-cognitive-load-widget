@@ -1,0 +1,9 @@
+{
+  "name": "low-cognitive-load",
+  "displayName": "Low Cognitive Load",
+  "description": "Response style with the answer first, short chunks and literal language, plus visual widgets with a hover glossary.",
+  "author": { "name": "Stella Luna Sousa" },
+  "repository": "https://github.com/StellaLunaSousa/low-cognitive-load-widget",
+  "license": "MIT",
+  "keywords": ["output-style", "readability", "widgets"]
+}
