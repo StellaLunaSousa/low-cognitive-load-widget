@@ -37,4 +37,16 @@ document.addEventListener('click',function(e){if(pin&&!e.target.closest('.lcl-g,
 document.addEventListener('toggle',close,true);
 var vw=innerWidth;
 window.addEventListener('resize',function(){if(innerWidth!==vw){vw=innerWidth;close();}});
+var btn=document.createElement('span'),hl=true;
+btn.className='lcl-tg';btn.tabIndex=0;btn.setAttribute('role','button');
+function setHl(on){
+  hl=on;root.classList.toggle('lcl-off',!on);btn.setAttribute('aria-pressed',on?'true':'false');
+  btn.innerHTML='<i class="ti ti-highlight" aria-hidden="true"></i>Destaque '+(on?'ligado':'desligado');
+  try{localStorage.setItem('lcl-hl',on?'1':'0');}catch(e){}
+}
+try{hl=localStorage.getItem('lcl-hl')!=='0';}catch(e){}
+setHl(hl);
+btn.addEventListener('click',function(e){e.stopPropagation();setHl(!hl);});
+btn.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();setHl(!hl);}});
+root.classList.add('lcl-has');root.insertBefore(btn,root.firstChild);
 };

@@ -37,10 +37,19 @@
 .lcl-q div{height:10px;border-radius:5px;background:color-mix(in srgb,var(--c) 14%,transparent)}
 .lcl-q div i{display:block;height:100%;border-radius:5px;background:var(--c)}
 @media(max-width:520px){.lcl-r,.lcl-l,.lcl-k,.lcl-q{padding-left:4px}.lcl-k{grid-template-columns:1fr;gap:2px}.lcl-k dd{margin-bottom:10px}.lcl-q{grid-template-columns:minmax(0,1fr) max-content}.lcl-q>span{grid-column:1/-1;margin-bottom:-8px}}
-.lcl-g{cursor:help;font-style:oblique 8deg;color:color-mix(in srgb,currentColor 70%,var(--text-accent));transition:color 100ms}
+.lcl-g{cursor:help;font-style:italic;color:color-mix(in srgb,currentColor 35%,var(--text-accent));transition:color 100ms}
 .lcl-g:hover,.lcl-g[aria-describedby]{color:var(--text-accent)}
 .lcl-g:focus-visible{outline:2px solid var(--border-accent);outline-offset:2px;border-radius:2px}
 .lcl-tip{display:none;position:absolute;z-index:2;width:240px;max-width:calc(100% - 22px);padding:8px 10px;border-radius:var(--radius);background:var(--surface-1);border:1px solid var(--border-strong);font-size:14px;line-height:1.45;color:var(--text-primary);opacity:0;transform:translateY(-4px);transition:opacity 90ms ease-in,transform 90ms ease-in,display 90ms allow-discrete}
 .lcl-tip.o{display:block;opacity:1;transform:none;transition-duration:130ms;transition-timing-function:ease-out}
 @starting-style{.lcl-tip.o{opacity:0;transform:translateY(-4px)}}
 @media(prefers-reduced-motion:reduce){.lcl-tip,.lcl-tip.o,.lcl-g,.lcl-d summary,.lcl-i,.lcl-c{transition:none}.lcl-tip{transform:none}.lcl-d::details-content,.lcl-d[open]::details-content{transition:none}}
+.lcl-off .lcl-g,.lcl-off .lcl-g:hover,.lcl-off .lcl-g[aria-describedby]{font-style:inherit;color:inherit}
+.lcl-has .lcl-t{padding-right:170px}
+.lcl-tg{position:absolute;top:8px;right:0;display:flex;align-items:center;gap:6px;padding:3px 10px;border:1px solid var(--border-strong);border-radius:999px;font-size:13px;line-height:1.4;color:var(--text-secondary);white-space:nowrap;cursor:pointer;transition:background-color 100ms}
+.lcl-tg i{font-size:15px}
+.lcl-tg[aria-pressed=true]{color:var(--text-primary);background:color-mix(in srgb,var(--text-accent) 18%,transparent)}
+.lcl-tg:hover{background:color-mix(in srgb,var(--text-accent) 28%,transparent)}
+.lcl-tg:focus-visible{outline:2px solid var(--border-accent);outline-offset:2px}
+@media(max-width:520px){.lcl-has .lcl-t{padding-right:0;padding-top:34px}}
+@media(prefers-reduced-motion:reduce){.lcl-tg{transition:none}}
